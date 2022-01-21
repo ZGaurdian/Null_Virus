@@ -1,10 +1,12 @@
-# Null_Virus_V1.0
+# Null_Virus_V1.1
 
-The creator is not responsible for any damage done to your pc by this malware
+1. The creator is not responsible for any damage done to your pc by this malware
 use it at your own risk.
 
-How to use the malware: 
+2. How to use the malware: 
 Go to the bin folder and run the Null.exe file.
 
-If you're getting errors running the malware
+3. If you're getting errors running the malware
 move the dlls in the bin folder to C:\Windows\System32
+
+4. Video of the virus: [Video](https://youtu.be/bdLl-x9K4hU "Video of Virus")
