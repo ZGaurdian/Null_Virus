@@ -10,5 +10,3 @@ Go to the bin folder and run the Null.exe file.
 move the dlls in the bin folder to C:\Windows\System32.
 
 4. Make sure that native.exe and Null.exe are in the same directory.
-
-5. Video of the virus: [Video](https://youtu.be/bdLl-x9K4hU "Video of Virus")
